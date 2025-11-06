@@ -1,0 +1,28 @@
+local ListGame = {
+	["6216468795"] = "77fa21c4a325751d40f73926e77dd55c2c16fd12981ff78db050372c784c6130",-- Weak Legacy 2
+}
+
+function GetExecutor()
+	if identifyexecutor then
+		local ok, n = pcall(identifyexecutor)
+		if ok and type(n) == "string" then return n end
+	end
+	if getexecutor then
+		local ok, n = pcall(getexecutor)
+		if ok and type(n) == "string" then return n end
+	end
+	return "Unknown"
+end
+
+local Exec = GetExecutor() or "Unknown"
+local GameId = ListGame[tostring(game.GameId)]
+
+if string.find(Exec, "Xeno") or string.find(Exec, "Solara") then
+	game:GetService("Players").LocalPlayer:Kick("This executor is not supported for this script.")
+end
+
+if not GameId then
+	game:GetService("Players").LocalPlayer:Kick("This script dosent support this game")
+else
+	loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/" .. GameId .. "/download"))()
+end
