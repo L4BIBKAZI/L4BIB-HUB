@@ -18,11 +18,11 @@ local Exec = GetExecutor() or "Unknown"
 local GameId = ListGame[tostring(game.GameId)]
 
 if string.find(Exec, "Xeno") or string.find(Exec, "Solara") then
-	game:GetService("Players").LocalPlayer:Kick("This executor is not supported for this game.")
+	game:GetService("Players").LocalPlayer:Kick("This executor is not supported for this script.")
 end
 
 if not GameId then
-	game:GetService("Players").LocalPlayer:Kick("This game is not supported.")
+	game:GetService("Players").LocalPlayer:Kick("This script dosent support this game")
 else
 	loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/" .. GameId .. "/download"))()
 end
