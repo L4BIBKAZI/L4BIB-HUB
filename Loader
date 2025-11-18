@@ -373,6 +373,8 @@ local function VerifyKey(key)
 
         task.wait(2)
 
+		script_key = script_key or key
+
         local tween =
             TweenService:Create(
             Main,
@@ -397,7 +399,7 @@ local function VerifyKey(key)
 end
 
 if script_key then
-    VerifyKey(script_key)
+	VerifyKey(script_key)
 end
 
 -- Auto-load saved key
