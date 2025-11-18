@@ -41,7 +41,7 @@ Main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 Main.Size = UDim2.new(0.332713664, 0, 0.367715359, 0)
-Main.GroupTransparency = 1
+Main.GroupTransparency = 0
 Main.Parent = KeySystem
 
 local UICorner = Instance.new("UICorner")
