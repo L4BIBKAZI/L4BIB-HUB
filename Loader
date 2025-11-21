@@ -16,16 +16,8 @@ local ListGame = {
 local script_id = ListGame[tostring(game.GameId)]
 
 if not script_id then
-    Player:Kick("Game not supported.")
+    Player:Kick("L4BIB HUB: Game not supported.")
     return
-end
-
--- Executor detection
-local executor_name = getexecutorname and getexecutorname() or "Unknown"
-for _, bad in {"Xeno", "Solara"} do
-    if executor_name:find(bad) then
-        workspace:SetAttribute("low", true)
-    end
 end
 
 -- === YOUR EXACT UI (FULLY RESTORED & FIXED) ===
