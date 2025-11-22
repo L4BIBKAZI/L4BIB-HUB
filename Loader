@@ -436,7 +436,7 @@ KeyBox.FocusLost:Connect(
 )
 
 -- Change these links!
-local WORK_INK = "https://ads.luarmor.net/get_key?for=L4BIB_HUB_WORKINK-GYUQYjSPnEfS"
+local WORK_INK = "https://ads.luarmor.net/get_key?for=L4BIB_HUB_WORKINK-LVyTGMzgcgVf"
 local LINKVERTISE = "https://ads.luarmor.net/get_key?for=L4BIB_HUB_LINKVERTISE-aWCZThazuDpE"
 local DISCORD_INVITE = "https://discord.gg/dPtFfx8Sjx"
 
