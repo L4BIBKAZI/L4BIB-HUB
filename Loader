@@ -11,8 +11,6 @@ local Player = Players.LocalPlayer
 
 local ListGame = {
     ["6216468795"] = "a30565cbe5aaa1e8766db3e2b2c4d5bd", -- WEAK LEGACY 2
-	["8950496606"] = "794fd9f853127d654c96f765187d2c5a", -- Deadly Delivery
-	["7671049560"] = "13439806236429772b7cd5f1248dbd6c", -- The Forge [BETA]
 }
 
 local script_id = ListGame[tostring(game.GameId)]
