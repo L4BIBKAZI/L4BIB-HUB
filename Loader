@@ -9,8 +9,10 @@ local CoreGui = game:GetService("CoreGui")
 local ThirdPartyUserService = game:GetService("ThirdPartyUserService")
 local Player = Players.LocalPlayer
 
+-- Game.ID = LuarmorID
 local ListGame = {
     ["6216468795"] = "a30565cbe5aaa1e8766db3e2b2c4d5bd", -- WEAK LEGACY 2
+	["8144728961"] = "8f2ea16c6dde45cb66c2db2fcc4439e8", -- Abyss [BETA]
 }
 
 local script_id = ListGame[tostring(game.GameId)]
