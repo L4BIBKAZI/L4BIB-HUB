@@ -9,7 +9,7 @@ local CONFIG = {
 
 -- Map of PlaceId → Jnkie Script Download URL
 local PLACE_SCRIPTS = {
-	[87229519582692] = "loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/70a8c480dcbdd69180ed32fb6cbad698ff46fd91196bcfa95838c2553a9ad880/download"))()"
+	[87229519582692] = "loadstring(game:HttpGet("https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Ultimate%20Gym%20Game"))()"
     -- [PlaceId] = "script url",
 }
 -- ============================================================
