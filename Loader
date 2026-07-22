@@ -9,17 +9,16 @@ local CONFIG = {
 
 -- Map of PlaceId → Jnkie Script Download URL
 local PLACE_SCRIPTS = {
-	["87229519582692"] = loadstring(game:HttpGet("https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Ultimate%20Gym%20Game"))()
-    -- [PlaceId] = "script url",
+    ["87229519582692"] = "https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Ultimate%20Gym%20Game",
 }
 -- ============================================================
 
 -- Place-lock check before anything else loads
 local currentPlace = game.PlaceId
-local scriptUrl    = PLACE_SCRIPTS[currentPlace]
+local scriptUrl = PLACE_SCRIPTS[tostring(game.PlaceId)]
 
 if not scriptUrl then
-    warn(("[Loader] Script is not supported in place %d."):format(currentPlace))
+    warn("[Loader] Script is not supported in place " .. tostring(game.PlaceId))
     return
 end
 
