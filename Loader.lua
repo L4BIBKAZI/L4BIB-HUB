@@ -9,7 +9,11 @@ local CONFIG = {
 
 -- Map of PlaceId → Jnkie Script Download URL
 local PLACE_SCRIPTS = {
-    ["87229519582692"] = "https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Ultimate%20Gym%20Game",
+    ["87229519582692"] = "https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Ultimate%20Gym%20Game", -- Ultimate Gym Game
+    ["136276200257140"] = "https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Cool%20Gym%20Game", -- Cool Gym Game
+    ["136848130917777"] = "https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Compshop" -- CompShop
+    ["72712036210947"] = "https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Fix%20It%20Up", -- Fix it up
+    ["100629725231227"] = "https://raw.githubusercontent.com/L4BIBKAZI/Scripts/refs/heads/main/Looksmax%20and%20Mog" -- LookMax and Mog
 }
 -- ============================================================
 
